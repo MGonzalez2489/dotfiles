@@ -1,6 +1,7 @@
 ##keybindings
 #disable ctrl+shift+f (nvim)
 keybind = ctrl+shift+f=unbind
+
 #disable alt+left, alt+right keybindings
 macos-option-as-alt = left
 keybind = alt+left=unbind
@@ -19,4 +20,21 @@ clipboard-trim-trailing-spaces = true
 window-padding-balance = true
 window-padding-y = 0
 window-padding-color = extend
+
+# ==========================================
+# Panels (SPLITS)
+# ==========================================
+# new panel  (Horizontal / Vertical)
+keybind = super+d=new_split:right
+keybind = super+shift+d=new_split:down
+
+
+# navigate
+keybind = super+alt+l=goto_split:left
+keybind = super+alt+h=goto_split:right
+keybind = super+alt+k=goto_split:up
+keybind = super+alt+j=goto_split:down
+
+# Maximizar / Minimizar el panel actual dentro de la ventana
+keybind = super+shift+enter=toggle_split_zoom
 
