@@ -1,0 +1,12 @@
+# Lazygit
+.config/lazygit/state.yml
+.config/nvim/lazy-lock.json
+.config/nvim/lazyvim.json
+
+# Vim
+vimsession
+packer_compiled.lua
+nvim.old
+nvim.lazy
+.luarc.json
+nvim-pack-lock.json

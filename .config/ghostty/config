@@ -1,0 +1,22 @@
+##keybindings
+#disable ctrl+shift+f (nvim)
+keybind = ctrl+shift+f=unbind
+#disable alt+left, alt+right keybindings
+macos-option-as-alt = left
+keybind = alt+left=unbind
+keybind = alt+right=unbind
+
+#style
+background-opacity = 0.9
+background-blur-radius = 20
+background = #031219
+
+
+copy-on-select                 = true
+shell-integration              = zsh
+clipboard-trim-trailing-spaces = true
+
+window-padding-balance = true
+window-padding-y = 0
+window-padding-color = extend
+
