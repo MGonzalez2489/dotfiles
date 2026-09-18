@@ -11,6 +11,8 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 -- Jumplist (ctrl+shift+m)
 -- keymap.set("n", "<C-m>", "<C-i>", opts)
 
+keymap.set("n", "qq", ":q<Return>", opts)
+
 -- Split window
 keymap.set("n", "ss", ":split<Return>", opts)
 keymap.set("n", "sv", ":vsplit<Return>", opts)
@@ -53,3 +55,7 @@ vim.keymap.set("n", "<C-n>", "<C-w>w", { desc = "Saltar al Preview / Siguiente V
 
 -- Si quieres que funcione incluso mientras estás filtrando/escribiendo en el buscador de Snacks:
 vim.keymap.set("i", "<C-n>", "<esc><C-w>w", { desc = "Saltar al Preview desde modo inserto" })
+
+--#region Goto-Preview
+keymap.set("n", "gp", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", { noremap = true })
+--#endregion
