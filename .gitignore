@@ -1,3 +1,12 @@
+# Ignore all
+.config/*
+
+# allow ghostty
+!.config/ghostty/
+
+# allow nvim
+!.config/nvim/
+
 # Lazygit
 .config/lazygit/state.yml
 .config/nvim/lazy-lock.json
