@@ -1,21 +1,20 @@
-# Ignore all
+# 1. Ignore all
 .config/*
 
-# allow ghostty
+# 2. Alllow required folders
 !.config/ghostty/
-
-# allow nvim
 !.config/nvim/
+!.config/lazygit/
 
-# Lazygit
+# 3. Exclude specific files in required folders
 .config/lazygit/state.yml
 .config/nvim/lazy-lock.json
 .config/nvim/lazyvim.json
 
-# Vim
-vimsession
+# Temp files
+*.vimsession
 packer_compiled.lua
-nvim.old
-nvim.lazy
+*.old
+*.lazy
 .luarc.json
 nvim-pack-lock.json
